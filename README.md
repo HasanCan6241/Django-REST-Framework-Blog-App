@@ -6,11 +6,11 @@ This project is a blog application built using **Python**, **Django**, and **Dja
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Testing](#testing)
 - [Future Improvements](#future-improvements)
+- [Setup and Installation](#setup-and-installation)
 
 ## Project Overview
 The **Django REST Framework Blog App** demonstrates the process of building and deploying secure, reliable, and efficient APIs. It allows users to create, read, update, and delete blog posts. The app also integrates secure token-based authentication (JWT), pagination, error handling, and API documentation.
@@ -32,6 +32,30 @@ This project was developed as part of my journey to understand the core principl
 - **JWT**: JSON Web Tokens for secure authentication.
 - **Postman**: Tool used for API testing.
 - **SQLite**: Default database used for this application.
+
+## Usage
+- **Access the Admin Panel**: Go to `http://127.0.0.1:8000/admin/` and log in with the superuser credentials.
+- **Test APIs**: Use Postman or any other API testing tool to test the available endpoints. API documentation is available to help you with the request format.
+
+## API Endpoints
+Here are some of the key API endpoints in the project:
+
+- `POST /api/auth/login/`: Login and obtain a JWT token.
+- `POST /api/posts/`: Create a new blog post (requires authentication).
+- `GET /api/posts/`: List all blog posts with pagination.
+- `GET /api/posts/{id}/`: Get a specific blog post by ID.
+- `PUT /api/posts/{id}/`: Update an existing blog post (requires authentication).
+- `DELETE /api/posts/{id}/`: Delete a specific blog post (requires authentication).
+
+## Testing
+During the development of this application, I extensively used **Postman** to test the APIs. This helped ensure the functionality and performance of the API endpoints, as well as the proper handling of edge cases and error scenarios.
+
+## Future Improvements
+While this project covers the core functionality, here are some potential areas for improvement:
+- **User Profile Management**: Add features for users to manage their profiles.
+- **Commenting System**: Implement a comment system where users can interact with blog posts.
+- **Search Functionality**: Add the ability to search blog posts by title, tags, or content.
+- **Unit Tests**: Add comprehensive unit tests for the application to ensure robust performance.
 
 ## Setup and Installation
 To set up the project locally, follow these steps:
@@ -71,28 +95,3 @@ To set up the project locally, follow these steps:
     ```bash
     python manage.py runserver
     ```
-
-## Usage
-- **Access the Admin Panel**: Go to `http://127.0.0.1:8000/admin/` and log in with the superuser credentials.
-- **Test APIs**: Use Postman or any other API testing tool to test the available endpoints. API documentation is available to help you with the request format.
-
-## API Endpoints
-Here are some of the key API endpoints in the project:
-
-- `POST /api/auth/login/`: Login and obtain a JWT token.
-- `POST /api/posts/`: Create a new blog post (requires authentication).
-- `GET /api/posts/`: List all blog posts with pagination.
-- `GET /api/posts/{id}/`: Get a specific blog post by ID.
-- `PUT /api/posts/{id}/`: Update an existing blog post (requires authentication).
-- `DELETE /api/posts/{id}/`: Delete a specific blog post (requires authentication).
-
-## Testing
-During the development of this application, I extensively used **Postman** to test the APIs. This helped ensure the functionality and performance of the API endpoints, as well as the proper handling of edge cases and error scenarios.
-
-## Future Improvements
-While this project covers the core functionality, here are some potential areas for improvement:
-- **User Profile Management**: Add features for users to manage their profiles.
-- **Commenting System**: Implement a comment system where users can interact with blog posts.
-- **Search Functionality**: Add the ability to search blog posts by title, tags, or content.
-- **Unit Tests**: Add comprehensive unit tests for the application to ensure robust performance.
-
