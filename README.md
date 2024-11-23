@@ -1,6 +1,6 @@
 # Django REST Framework Blog App
 
-<img src="images/drf-logo.png" alt="Django REST Framework Logo" width="850"/>
+<img src="images/drf-logo.png" alt="Django REST Framework Logo" width="850" height="400"/>
 
 This project is a blog application built using **Python**, **Django**, and **Django Rest Framework (DRF)**. It serves as a practical example of the skills I gained through the "Python Django with API Development" course on Miuul, where I learned how to design and implement modern APIs using Django and DRF.
 
